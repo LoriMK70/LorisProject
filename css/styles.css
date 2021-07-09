@@ -32,7 +32,6 @@ header {
     border-radius: 10px;
     background-image:radial-gradient(#FF1493, rgb(241, 8, 8)) ;
 }
-
 .work {
     display: flex;
     flex-direction: row;
