@@ -12,32 +12,26 @@ body {
     background-color: peachpuff;
 }
 /*header*/
-.flex-container {
-    display: flex;
-}
-header {
-    flex:1;
+.header {
     padding: 5px 5px 5px 5px;
-    border: 10px solid #FFA949;
-    border-radius: 10px;
-    height: 350px;
-    background-image: radial-gradient(yellow, red)
-}
-
-.name {
-    display: inline-block;
-    padding: 10px;
+    text-align: center;
+    padding 10px;
+    margin: 5px;
     border: 10px solid #ffa949;
+    border-radius: 10px;
+    background-image: radial-gradient(#FF8C00, #FF1493);
+}
+.name {
+    display: flex;
+    padding: 10px;
+    border: 10px solid #FFA949;
     margin: 5px;
     border-radius: 10px;
     height: 350px;
     background-image: radial-gradient(yellow, red)
 }
-.profile-img {
-    display:inline-block;
-    margin: 0 1rem 1rem 0;
-    height: 300px;
-    width: 150px;
+.flex-child {
+    flex: 1;
 }
 /* FLEXBOXES */
 
@@ -67,17 +61,23 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.justify-image {
+    text-align: justify;
+    display: inline-block;
+    width: 100%; 
+    height: 0;
+}
 .travel-1 {
-    width: auto;
     height: 300px;
+    width: 250px;
 }
 .travel-2 {
-    width: auto;
     height: 300px;
+    width: 250px;
 }
 .travel-3 {
-    width: auto;
     height: 300px;
+    width: 250px;
 }
 .reading {
 display: flex;
