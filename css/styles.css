@@ -43,9 +43,10 @@ body {
         background-color: #FF1493;
     }
 }
+/* FLEXBOXES */
 .name {
     display: flex;
-    padding: 10px;
+    padding: 20px;
     border: 10px solid #FFA949;
     margin: 5px;
     border-radius: 10px;
@@ -55,16 +56,18 @@ body {
 .flex-child {
     flex: 1;
 }
-/* FLEXBOXES */
 
 .list {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
     width: 100%;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     background-image:radial-gradient(yellow, red) ;
+    border:10px solid #FF1493;
 }
 .work {
     display: flex;
@@ -99,11 +102,10 @@ body {
     height: 300px;
     width: 250px;
 }
-.reading {
-display: flex;
-flex-direction: column;
+.fun {
+    border: 10px solid orchid;
 }
-footer {
+.footer {
     width: 400px;
     padding: 5px;
     border: 2px solid #ffa949;
@@ -112,3 +114,12 @@ footer {
     font-size: 20px;
     text-align: center;
 }
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width 768px),
+       only screen and (orientation: landscape)
+.list {
+    flex-direction: row;
+    width: 38%;
+    font-size: 1.5rem;
+} 
