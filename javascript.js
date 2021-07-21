@@ -21,7 +21,7 @@ function createListItems (arr) {
     return items;
 }
 
-document.querySelector ('main').innerHTML= 
+document.querySelector ('#test').innerHTML= 
     `<ul>
         ${createListItems(myComments) }
     </ul>
