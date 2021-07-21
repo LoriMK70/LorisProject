@@ -13,9 +13,9 @@ for ( let i=0; i<myComments.length; i++) {
     console.log (myComments[i]);
 }
 
-function createListItems (myComments) {
+function createListItems (arr) {
     let items='myComments';
-    for ( let i=0;<i =myComments.length; i++ ) {
+    for ( let i=0; i<myComments.length; i++ )  {
             items += `<li>${arr[i]}</li>`
     }
     return items;
