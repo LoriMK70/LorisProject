@@ -1,12 +1,17 @@
 const myComments = [ 
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit '
+    'I made a JavaScript Array',
+    'Just to show I know what I am doing',
+    'If this coding thing does not work out',
+    'I might become a mime',
+    'We both work in boxes, right?',
+    'Is there a MIME Louisville?'
 
 
 ];
+
+myComments.unshift ('HI THERE!');
+
+myComments.pop ('Is there a MIME Louisville?')
 
 for ( let i=0; i<myComments.length; i++) {
 
