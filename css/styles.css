@@ -112,12 +112,12 @@ body {
   /*FLEXBOX WITH PROFILE PIC AND ABOUT ME INFO*/
 .name {
     display: flex;
+    flex-direction: column;
     padding: 10px;
     margin: 5px;
     border: 10px solid #FFA949;
     border-radius: 10px;
     background-image: radial-gradient(yellow, red);
-    flex-direction: row;
 }
 
 
@@ -125,18 +125,12 @@ body {
     flex: 1;
 }
 
-/*MEDIA QUERY TABLET*/
 
-@media screen and (max-width: 600px) {
-    .name {
-      flex-direction: column;
-    }
-  }
 
 /*MY NAVIGATION FLEXBOX WITH MEDIA QUERY*/
 .list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     padding: 20px;
     width: 100%;
@@ -146,12 +140,7 @@ body {
     border:10px solid #FF1493;
 
 }
-/*MEDIA QUERY LAPTOP SCREEN*/
 
-@media screen and (max-width: 1080px) {
-    .list {flex-direction: column;
-    }
-}
 /*WORK HISTORY SECTION*/
 .work {
     display: flex;
@@ -229,4 +218,16 @@ body {
     font-size: 20px;
     text-align: center;
 }
+/*MEDIA QUERY TABLET*/
 
+@media screen and (min-width: 600px) {
+    .name {
+      flex-direction: row;
+    }
+}
+/*MEDIA QUERY LAPTOP SCREEN*/
+
+@media screen and (min-width: 1080px) {
+    .list {flex-direction: row;
+    }
+}

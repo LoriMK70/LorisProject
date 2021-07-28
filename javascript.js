@@ -19,7 +19,7 @@ for ( let i=0; i<myComments.length; i++) {
 }
 
 function createListItems (arr) {
-    let items='myComments';
+    let items='';
     for ( let i=0; i<myComments.length; i++ )  {
             items += `<li>${arr[i]}</li>`
     }
